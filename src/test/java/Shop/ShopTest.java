@@ -35,10 +35,10 @@ public class ShopTest {
         assertEquals(1, shop.stockListSize());
     }
 
-//    @Test
-//    public void checkTotalProfitForShop() {
-//        assertEquals(8.00, shop.checkTotalProfitForShop(), 0.0);
-//    }
+    @Test
+    public void checkTotalProfitForShop() {
+        assertEquals(6.00, shop.checkTotalProfitForShop(), 0.0);
+    }
 
 
 

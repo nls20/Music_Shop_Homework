@@ -28,7 +28,10 @@ public class Shop {
     }
 
     public double checkTotalProfitForShop () {
-        double totalProfit = drumstick.calculateMarkUp() + sheetMusic.calculateMarkUp() + guitarStrings.calculateMarkUp();
+        double totalProfit = 0;
+        for (ISell stockList: this.stockList) {
+            totalProfit += stockList.calculateMarkUp();
+        }
         return totalProfit;
 }
 }
